@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+.App {
+  text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* main container -------------------------------------------------*/
+.container {
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    
+    background-image: url(./Assets/clouds.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* main container blur*/
+.container#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+/* main container content */
+.container .content {
+    position: relative;
+    max-width: 800px;
+}
+/* main header */
+#nameHeader {
+    font-weight: 600;
+    font-size: 5em;
+    margin-left: 225px;
+    padding-bottom: 550px;
+    color: plum;
+    text-align: center;
+}
+
+/* buttons for info -> contact */
+a {
+    position: relative;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: plum;
+    background: transparent;
+    border: solid 1px paleturquoise;
+    border-radius: 4px;
+}
+/* button effects -----------------------------------------------------*/
+a:hover {
+    background-color: plum;
+    color: paleturquoise;
+    font-weight: 500;
+    /*font-size: x-large;*/
+}
+
+.mainButtons {
+    position: relative;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+
+    text-align: center;
+    color: plum;
+    font-size: x-large;
+    
+    background: transparent;
+    border: solid 3px paleturquoise;
+    border-radius: 4px;
+}
+.mainButtons:hover {
+    background-color: plum;
+    color: paleturquoise;
+}
+
+/*Button links to git linkden etc..  --------------------------------*/
+#gitButton {
+    background-image: url(./Assets/GitHub-Mark-32px.png);
+    background-color: transparent;
+    border: inset 3px  paleturquoise;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    display: block;
+}
+#gitButton:hover {
+    background-color: plum;
+}
+#linkedinButton {
+    background-image: url(./Assets/linkedin.png);
+    background-color: transparent;
+    border:  inset 3px paleturquoise;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    display: inline-block;
+}
+#linkedinButton:hover {
+    background-color: plum;
+}
+
+/* POPUPS ----------------------------------------------------*/
+
+/*info popup */
+#popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: lightblue;
+    border: outset 4px paleturquoise;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#popupHeader {
+    border-bottom: 1px solid plum;
+    margin-bottom: 25px;
+    color: plum;
+    font-size: x-large;
+    font-weight: 800;
+    font-style: italic;
+}
+
+#infoPara {
+    margin-top: 15px;
+    text-align: center;
+    border: paleturquoise solid 1px;
+    background: lightblue;
+    color: #364B72;
+}
+.infoImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* project popup */
+#projects {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: lightblue;
+    border: outset 4px paleturquoise;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#projects.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s; 
+}
+
+/* resume popup */
+#resume {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: lightblue;
+    border: outset 4px paleturquoise;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#resume.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s; 
+}
+
+
+/*contact popup*/
+#contact {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: lightblue;
+    border: outset 4px paleturquoise;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#contact.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s; 
+}
+
+/* FORM */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit]{
+    position: relative;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: plum;
+    background: transparent;
+    border: solid 1px paleturquoise;
+    border-radius: 4px;
+}
+input[type=submit]:hover {
+    background-color: plum;
+    color: paleturquoise;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+label {
+    font-weight: 500;
+}
+
+/* accordion --------------------------------------------- */
+
+.accordionHeader {
+    color: plum !important;
+    background: #364B72 !important;
+    border: solid 4px paleturquoise !important;
+    font-size: large !important;
+    font-weight: 700 !important;
+}
+.accordionBody {
+    color: #364B72 !important;
+    background: lightblue !important;
+    border:  solid 1px plum !important;
+}
