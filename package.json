@@ -2,6 +2,7 @@
   "name": "react_website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hfriedman13.github.io/personalSite/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
@@ -18,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+     "bd":"npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,4 +40,5 @@
       "last 1 safari version"
     ]
   }
+  
 }
