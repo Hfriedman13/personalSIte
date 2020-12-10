@@ -47,7 +47,7 @@
 }
 
 /* buttons for info -> contact */
-a {
+.close-button {
     position: relative;
     padding: 5px 20px;
     display: inline-block;

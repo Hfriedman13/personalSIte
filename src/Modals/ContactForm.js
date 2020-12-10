@@ -19,7 +19,7 @@ function ContactForm({handleClose}) {
                 </div>
             </div>
             <input type="submit" />
-            <a href="/#" onClick={() => handleClose('contact')}>Close</a>
+            <span className="close-button" onClick={() => handleClose('contact')}>Close</span>
         </div>
     );
     
