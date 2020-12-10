@@ -38,7 +38,7 @@ function Resume({handleClose}) {
                     </Accordion.Collapse>
                 </Card>
         </Accordion>
-        <a href="/#" onClick={() => handleClose('resume')}>Close</a>
+            <span className="close-button" onClick={() => handleClose('resume')}>Close</span>
         </ div>
     );
     

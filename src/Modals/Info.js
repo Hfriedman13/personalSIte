@@ -11,7 +11,7 @@ function Info({ handleClose }) {
             </image>
             <p id="infoPara">My name is Hannah Friedman, I am an ambitious beginner looking for a challenge. Currently pursuing my bachelor’s in computer science, I am humble and
         hungry to learn new skills and grow as a developer.  </p>
-            <a href="/#" onClick={() => handleClose('popup')}>Close</a>
+            <span className="close-button" onClick={() => handleClose('popup')}>Close</span>
         </div>
     );
 }

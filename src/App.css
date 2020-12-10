@@ -60,11 +60,10 @@
     border-radius: 4px;
 }
 /* button effects -----------------------------------------------------*/
-a:hover {
+.close-button:hover {
     background-color: plum;
     color: paleturquoise;
     font-weight: 500;
-    /*font-size: x-large;*/
 }
 
 .mainButtons {

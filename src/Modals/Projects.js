@@ -42,7 +42,7 @@ function Projects({ handleClose }) {
                     </Accordion.Collapse>
                 </Card>
             </Accordion>
-            <a href="/#" onClick={() => handleClose('projects')}>Close</a>
+            <span className="close-button" onClick={() => handleClose('projects')}>Close</span>
         </ div>
     );
 }
