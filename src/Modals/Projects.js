@@ -11,8 +11,9 @@ function Projects({ handleClose }) {
                         Personal Site
                         </Accordion.Toggle>
                     <Accordion.Collapse eventKey="0">
-                        <Card.Body className='accordionBody'>My personal webpage is written with a combination of React, javaScript, and css. I created this page
-                        to allow users to view infomation about myself including my resume with direct links to my Github and Linkdin account.
+                        <Card.Body className='accordionBody'>This webpage is written with React JS, CSS, and HTML. This page will allow vistors to view a brief
+                        about section, view projects I have completed / in the process of completing, as well as my resume, a contact form, and link to my Linkdin and Github. 
+                        Thank you for visiting!! 
                         </Card.Body>
 
                     </Accordion.Collapse>
@@ -23,9 +24,9 @@ function Projects({ handleClose }) {
                         </Accordion.Toggle>
 
                     <Accordion.Collapse eventKey="1">
-                        <Card.Body className='accordionBody'>I am currently enrolled in a iOS App development bootcamp. During the length
+                        <Card.Body className='accordionBody'>I am currently enrolled in a iOS App development bootcamp. During the duration
                         of the course I have currently completed 10 Apps, as well as developed a love for the Swift language. I am developing
-                        my own app store game, which I hope to be completed soon and have it downloadable in the app store.</Card.Body>
+                        my own app store game with Watch OS, which I hope to be completed available in the app store soon.</Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 <Card>
