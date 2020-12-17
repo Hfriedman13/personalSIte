@@ -74,7 +74,7 @@ function toggle(id) {
             <button className="mainButtons" onClick={()=>toggle('contact')}>Contact</button>
      
             <button id="gitButton" className="mainButtons" onClick={()=> window.open('https://github.com/Hfriedman13', '_blank')}></button>
-            <button id="linkedinButton" className="mainButtons" onClick={()=> window.open('http://www.linkedin.com/in/hannah-friedman-b0a6601a8', '_blank')}></button>
+            <button id="linkedinButton" className="mainButtons" onClick={()=> window.open('http://www.linkedin.com/in/hannahruthfriedman', '_blank')}></button>
         </div>
     </div>
 
