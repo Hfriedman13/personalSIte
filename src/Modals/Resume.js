@@ -1,43 +1,67 @@
-import App from '../App.js';
-import { Accordion, Card, Button} from 'react-bootstrap'
+import React from 'react'
+// // import App from '../App.js';
+// import { Page, Document } from 'react-pdf'
 
-function Resume({handleClose}) {
+
+// function Resume({handleClose}) {
+//     //const resume = require('../Assets/csalgadoRES.pdf')
+//     return (
+//         < div id="resume" >
+//         <h2 id="popupHeader">Resume</h2>
+//             <Document
+//                 file={require('../Assets/resumePdf.pdf')}
+//             >
+//                 <Page pageNumber={0} />
+//             </Document>
+//             <span className="close-button" onClick={() => handleClose('resume')}>Close</span>
+//         </ div>
+//    
+
+import { Accordion, Card, Button } from 'react-bootstrap'
+
+function Resume({ handleClose }) {
     return (
-        < div id="resume" >
-        <h2 id="popupHeader">Resume</h2>
-        <Accordion>
-            <Card>
-                    <Accordion.Toggle className='accordionHeader' as={Button} eventKey="0">
-                        Schooling
-      </Accordion.Toggle>
-                <Accordion.Collapse eventKey="0">
-                        <Card.Body className='accordionBody'>I am currently persuing my Bachelors degree in Computer Science at Auburn University.
-                        I also have a Bachelors in Sociology with a minor in Psychology from Florida Gulf Coast University.</Card.Body>
-                    
-                </Accordion.Collapse>
-            </Card>
-            <Card>
-                 <Accordion.Toggle className='accordionHeader' as={Button} eventKey="1">
-                    Skills and Abilities
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="1">
-                        <Card.Body className='accordionBody'>Experience with Java, Swift, HTML, CSS, and some JavaScript / React. I have a strong 
-                        work ethic and management skills. </Card.Body>
-                </Accordion.Collapse>
-            </Card>
+        /**Project popup */
+        <div id="resume">
+            <h2 id="popupHeader">Resume</h2>
+            <Accordion>
                 <Card>
-                        <Accordion.Toggle className='accordionHeader' as={Button} eventKey="2">
-                            Experience 
-      </Accordion.Toggle>
-                    <Accordion.Collapse eventKey="2">
-                        <Card.Body className='accordionBody'>Although I have no work experience as a developer, I have a passion for developing Apps and working with 
-                        Swift. </Card.Body>
+                    <Accordion.Toggle className='accordionHeader' as={Button} eventKey="0">
+                        Education
+                        </Accordion.Toggle>
+                    <Accordion.Collapse eventKey="0">
+                        <Card.Body className='accordionBody'> Florida Gulf Coast University - Bachelors - Sociology
+                        Auburn University - Bachelors - Computer Science 
+                        </Card.Body>
+
                     </Accordion.Collapse>
                 </Card>
-        </Accordion>
+                <Card>
+                    <Accordion.Toggle className='accordionHeader' as={Button} eventKey="1">
+                        Work History
+                        </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="1">
+                        <Card.Body className='accordionBody'>Internship - Studio67 - Web design </Card.Body>
+                    </Accordion.Collapse>
+                </Card>
+                <Card>
+                    <Accordion.Toggle className='accordionHeader' as={Button} eventKey="2">
+                        Skills
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="2">
+                        <Card.Body className='accordionBody'>
+                           * Java <br></br>
+                           * HTML / CSS <br></br>
+                           * JavaScript <br></br>
+                           * Swift / SwiftUI
+                        </Card.Body>
+                    </Accordion.Collapse>
+                </Card>
+            </Accordion>
             <span className="close-button" onClick={() => handleClose('resume')}>Close</span>
         </ div>
     );
-    
 }
 export default Resume

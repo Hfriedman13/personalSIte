@@ -12,18 +12,16 @@
 }
 /* main container -------------------------------------------------*/
 .container {
-    position: relative;
+    /* position: relative; */
     min-width: 100%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: 0.5s;
     
-    background-image: url(./Assets/clouds.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-image: url(./Assets/clouds.jpg);*/
+    background-color: #364B72;
+    /*background-position: center;
+    background-repeat: no-repeat;*/
+    
 }
 /* main container blur*/
 .container#blur.active {
@@ -33,17 +31,92 @@
 }
 /* main container content */
 .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    /* flex-direction: row;
     position: relative;
     max-width: 800px;
+    flex-wrap: wrap; */
 }
 /* main header */
 #nameHeader {
     font-weight: 600;
-    font-size: 5em;
-    margin-left: 225px;
-    padding-bottom: 550px;
+    font-size: 6em;
+    padding-top: 200px;
+    /* margin-left: 225px;
+    padding-bottom: 650px; */
+    display: flex;
+    justify-content: center;
+    /* flex-flow: center;
+    align-self: stretch; */
     color: plum;
+    /* text-align: center; */
+}
+#sub {
+    display: flex;
+    justify-content: center;
+
+    color: lavender;
+    font-size: 2.5em;
+    padding: 20px;
+}
+span {
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainButtons {
+    /* position: relative;
+    padding: 5px 20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    /* margin-bottom: 10px; */
+    
+
     text-align: center;
+    color: plum;
+    
+    font-size: x-large;
+    
+    background: transparent;
+    border: solid 3px paleturquoise;
+    width: 200px;
+    border-radius: 4px;
+    padding: 10px;
+}
+.mainButtons:hover {
+    background-color: plum;
+    color: paleturquoise;
+}
+
+/*Button links to git linkden etc..  --------------------------------*/
+#gitButton {
+    background-image: url(./Assets/GitHub-Mark-32px.png);
+    background-color: transparent;
+    border: inset 3px  paleturquoise;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    
+}
+
+#gitButton:hover {
+    background-color: plum;
+}
+#linkedinButton {
+    background-image: url(./Assets/linkedin.png);
+    background-color: transparent;
+    border:  inset 3px paleturquoise;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+}
+#linkedinButton:hover {
+    background-color: plum;
 }
 
 /* buttons for info -> contact */
@@ -64,52 +137,6 @@
     background-color: plum;
     color: paleturquoise;
     font-weight: 500;
-}
-
-.mainButtons {
-    position: relative;
-    padding: 5px 20px;
-    display: inline-block;
-    margin-bottom: 10px;
-    
-
-    text-align: center;
-    color: plum;
-    font-size: x-large;
-    
-    background: transparent;
-    border: solid 3px paleturquoise;
-    border-radius: 4px;
-}
-.mainButtons:hover {
-    background-color: plum;
-    color: paleturquoise;
-}
-
-/*Button links to git linkden etc..  --------------------------------*/
-#gitButton {
-    background-image: url(./Assets/GitHub-Mark-32px.png);
-    background-color: transparent;
-    border: inset 3px  paleturquoise;
-    height: 44px;
-    width: 44px;
-    cursor: pointer;
-    display: block;
-}
-#gitButton:hover {
-    background-color: plum;
-}
-#linkedinButton {
-    background-image: url(./Assets/linkedin.png);
-    background-color: transparent;
-    border:  inset 3px paleturquoise;
-    height: 44px;
-    width: 44px;
-    cursor: pointer;
-    display: inline-block;
-}
-#linkedinButton:hover {
-    background-color: plum;
 }
 
 /* POPUPS ----------------------------------------------------*/
@@ -203,7 +230,7 @@
 
 
 /*contact popup*/
-#contact {
+/* #contact {
     position: fixed;
     top: 40%;
     left: 50%;
@@ -216,17 +243,17 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-}
-#contact.active {
+} */
+/* #contact.active {
     top: 50%;
     visibility: visible;
     opacity: 1;
     transition: 0.5s; 
-}
+} */
 
 /* FORM */
 
-input[type=text], select, textarea {
+/* input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -255,7 +282,7 @@ input[type=submit]:hover {
 
 label {
     font-weight: 500;
-}
+} */
 
 /* accordion --------------------------------------------- */
 

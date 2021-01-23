@@ -31,13 +31,15 @@ function Projects({ handleClose }) {
                 </Card>
                 <Card>
                     <Accordion.Toggle className='accordionHeader' as={Button} eventKey="2">
-                        C# Web Browser
+                        RunHer
                     </Accordion.Toggle>
 
                     <Accordion.Collapse eventKey="2">
                         <Card.Body className='accordionBody'>
-                            Using Visual Studio and the Windows Forms framework in C#. The web browser has multiple functions, similar to those in a typical
-                web browser. A menubar, tool strip, tab control, etc..
+                            Written in Swift / SwiftUI, I created an iOS app where users can time their runs. I created RunHer to route, time, and track my runs. 
+                            RunHer tracks your route in real time. Once your run is completed it shows a map of your run indicated by a "pace" line, which
+                            will be green yellow or red depending on your pace throughout the run. It also allows you to save your runs.
+
                <br></br>
                 <a href="https://github.com/Hfriedman13/CPSC-2713">Repository</a></Card.Body>
                     </Accordion.Collapse>
