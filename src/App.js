@@ -2,6 +2,7 @@ import './App.css';
 import Info from './Modals/Info'
 import Projects from './Modals/Projects'
 import Resume from './Modals/Resume'
+import './cat.scss'
 import Snap from 'snapsvg-cjs';
 import { useEffect } from 'react';
 
@@ -115,6 +116,42 @@ function App() {
         <span id="gitButton" className="mainButtons" onClick={()=> window.open('https://github.com/Hfriedman13', '_blank')} />
         <span id="linkedinButton" className="mainButtons" onClick={()=> window.open('http://www.linkedin.com/in/hannahruthfriedman', '_blank')} />
       </div>
+          <div className="main">
+            <span className="stand"></span>
+            <div className="cat">
+              <div className="body"></div>
+              <div className="head">
+                <div className="ear"></div>
+                <div className="ear"></div>
+              </div>
+              <div className="face">
+                <div className="nose"></div>
+                <div className="whisker-container">
+                  <div className="whisker"></div>
+                  <div className="whisker"></div>
+                </div>
+                <div className="whisker-container">
+                  <div className="whisker"></div>
+                  <div className="whisker"></div>
+                </div>
+              </div>
+              <div className="tail-container">
+                <div className="tail">
+                  <div className="tail">
+                    <div className="tail">
+                      <div className="tail">
+                        <div className="tail">
+                          <div className="tail">
+                            <div className="tail"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
   </div>
 
@@ -131,7 +168,10 @@ function App() {
     handleClose={toggle}
     />
     </div>
+
+    
   );
+  
 }
 
 export default App;
