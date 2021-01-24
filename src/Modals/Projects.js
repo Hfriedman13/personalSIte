@@ -41,7 +41,7 @@ function Projects({ handleClose }) {
                             will be green yellow or red depending on your pace throughout the run. It also allows you to save your runs.
 
                <br></br>
-                <a href="https://github.com/Hfriedman13/CPSC-2713">Repository</a></Card.Body>
+                </Card.Body>
                     </Accordion.Collapse>
                 </Card>
             </Accordion>
