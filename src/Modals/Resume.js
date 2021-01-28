@@ -38,24 +38,31 @@ function Resume({ handleClose }) {
                 </Card>
                 <Card>
                     <Accordion.Toggle className='accordionHeader' as={Button} eventKey="1">
-                        Work History
+                        Programming Languages
                         </Accordion.Toggle>
 
                     <Accordion.Collapse eventKey="1">
-                        <Card.Body className='accordionBody'>Internship - Studio67 - Web design </Card.Body>
+                        <Card.Body className='accordionBody'>
+                            • Java <br></br> 
+                            • Swift / SwiftUI <br></br>
+                            • JavaScript <br></br>
+                            • HTML / CSS <br></br>
+                             </Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 <Card>
                     <Accordion.Toggle className='accordionHeader' as={Button} eventKey="2">
-                        Skills
+                        Experience
                     </Accordion.Toggle>
 
                     <Accordion.Collapse eventKey="2">
                         <Card.Body className='accordionBody'>
-                           * Java <br></br>
-                           * HTML / CSS <br></br>
-                           * JavaScript <br></br>
-                           * Swift / SwiftUI
+                            I am currently designing and developing a website for Studio67 and 
+                            ShineOff Cosmetics. Using Wix, I have been working directly with the client 
+                            to create a multi paged website(s) and shop that portrays their company to their 
+                            liking. Throughout the process I have managed and edited the sites photos as well as 
+                            put together a webstore where their products can be showcased and purchased quickly and 
+                            efficiently.  
                         </Card.Body>
                     </Accordion.Collapse>
                 </Card>

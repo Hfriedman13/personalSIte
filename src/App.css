@@ -136,24 +136,11 @@
 
 /*info popup */
 #popup {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 600px;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
     background: lightblue;
     border: outset 4px paleturquoise;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-}
-#popup.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
 }
 #popupHeader {
     border-bottom: 1px solid plum;
@@ -179,47 +166,24 @@
 
 /* project popup */
 #projects {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
+     width: 600px;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
     background: lightblue;
     border: outset 4px paleturquoise;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-}
-#projects.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s; 
+    text-align: center;
 }
 
 /* resume popup */
 #resume {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 600px;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
     background: lightblue;
     border: outset 4px paleturquoise;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
+    text-align: center;
 }
-#resume.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s; 
-}
+
 /* accordion --------------------------------------------- */
 
 .accordionHeader {

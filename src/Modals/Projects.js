@@ -11,9 +11,11 @@ function Projects({ handleClose }) {
                         Personal Site
                         </Accordion.Toggle>
                     <Accordion.Collapse eventKey="0">
-                        <Card.Body className='accordionBody'>This webpage is written with React JS, CSS, and HTML. This page will allow vistors to view a brief
-                        about section, view projects I have completed / in the process of completing, as well as my resume, a contact form, and link to my Linkdin and Github. 
-                        Thank you for visiting!! 
+                        <Card.Body className='accordionBody'>I created an interactive web app using JavaScript 
+                        and React to showcase my resume, and projects. The site also has a links to my GitHub and 
+                        LinkedIn Profiles. Using GitHub pages to host my site, I purchased a domain name to allow 
+                        you to access my site via my URL. This project was created with best practices in mind by 
+                        following modern CSS/HTML guidelines through the react documentation and CSS-tricks website.
                         </Card.Body>
 
                     </Accordion.Collapse>
@@ -24,9 +26,11 @@ function Projects({ handleClose }) {
                         </Accordion.Toggle>
 
                     <Accordion.Collapse eventKey="1">
-                        <Card.Body className='accordionBody'>I am currently enrolled in a iOS App development bootcamp. During the duration
-                        of the course I have currently completed 10 Apps, as well as developed a love for the Swift language. I am developing
-                        my own app store game with Watch OS, which I hope to be completed available in the app store soon.</Card.Body>
+                        <Card.Body className='accordionBody'>Beginning the course in mid-November of 2020. I have expanded my 
+                        knowledge, interest and skills with Swift and SwiftUI. Over the course of a few months, I have learned 
+                        the basics of Xcode, interface builder, MVC design patterns, JSON Parsing, APIs, and Core Location. I 
+                        continue to practice these techniques in my projects such as Runher and projects given throughout the 
+                        Bootcamp. This course has amplified my interest in iOS development. </Card.Body>
                     </Accordion.Collapse>
                 </Card>
                 <Card>
@@ -36,10 +40,10 @@ function Projects({ handleClose }) {
 
                     <Accordion.Collapse eventKey="2">
                         <Card.Body className='accordionBody'>
-                            Written in Swift / SwiftUI, I created an iOS app where users can time their runs. I created RunHer to route, time, and track my runs. 
-                            RunHer tracks your route in real time. Once your run is completed it shows a map of your run indicated by a "pace" line, which
-                            will be green yellow or red depending on your pace throughout the run. It also allows you to save your runs.
-
+                            I am currently in the process of developing an iOS app which tracks your route, pace, and distance while 
+                            you're on a run. Made with SwiftUI, this app allows users to save their runs to track their performance using
+                             their core location along with map kit. My app shows the user their route marked with a pace line, which is
+                            green, yellow, or red based upon their pace.  I am hoping to soon put this app on the app store. 
                <br></br>
                 </Card.Body>
                     </Accordion.Collapse>
